@@ -4,8 +4,8 @@ services:
     trustar:
         build: .
         environment:
-            - HOST=localhost
-            - PORT=4000
+            - HOST=${HOST}
+            - PORT=${PORT}
         ports:
-            - 4000:4000
+            - ${PORT}:${PORT}
         command: make
